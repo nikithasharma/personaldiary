@@ -13,7 +13,7 @@ int main()
 	char word[100];
 	int b;
 	printf("\n\t*************************************\n");
-	printf("\tHey....!!!!\nWelcome to personal dairy management\n");
+	printf("\tHey....!!!!\nWelcome to personal diary management system!\n");
 	printf("\n\t*************************************\n");
 	printf("Add account\t[1]:\n");
 	scanf("%d",&a);
@@ -32,7 +32,7 @@ int main()
 			printf("Add records\t[1]\n");
 			printf("View records\t[2]\n");
 			printf("Edit record\t[3]\n");
-			printf("delete record\t[4]\n");
+			printf("Delete record\t[4]\n");
 			printf("Change password\t[5]\n");
 			printf("Exit\t[6]");
 			printf("Enter your choice:");
