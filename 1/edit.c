@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include <conio.h>
 #include "diaryh.h"
-void viewrecord()
+void editrecord()
 {
 	system("cls");
 	FILE *fp;
@@ -27,27 +27,10 @@ void viewrecord()
 	}
 	while (another=='Y'||another=='y')
 	{
-		printf("\nEnter the date you want to view:");
+		printf("\nEnter the date you want to edit:");
 		scanf("%s",filename);
-		sprintf(fname,"%s.txt",filename);
-		v = fopen (fname,"r") ;
-	
-		if (fp == NULL)
-		{
-		
-			{
-				printf("\nSYSTEM ERROR...");
-				printf("\nPRESS ANY KEY TO EXIT");
-				getch();
-				return ;
-			}	
-		}
-		char s;
-		while((s=fgetc(v))!=EOF)
-		{
-			printf("%c",s);
-		}
-		
+		sprintf(fname,"notepad %s.txt",filename);
+		system( fname );
 		printf("\n\nDO YOU WANT TO VIEW ANOTHER RECORD(Y/N):\n\n");
 		fflush(stdin);
 		scanf("%c",&another);
@@ -71,4 +54,5 @@ void viewrecord()
 			printf("\nPress a valid key [Y/N]\n");
 		}
 	}
+}
 }

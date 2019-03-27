@@ -4,3 +4,4 @@ void viewrecord();
 void editrecord();
 void delrecord();
 void change();
+int login(char *name, char *pass);

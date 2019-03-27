@@ -26,13 +26,12 @@ void ma_in(char *p)
 			viewrecord();
 			break;
 		
-		//case 3:
-			//editrecord();
-			//break;
+		case 3:
+			editrecord();
+			break;
 		case 4:
 			delrecord();
 			break;
-		/*
 		case 5:
 			change();
 			break;
@@ -40,7 +39,6 @@ void ma_in(char *p)
 			printf("\n\n\n\tThankyou for using this software\n\n");
 			getch();
 			exit(0);
-		*/
 		default:
 			printf("\nYOU HAVE ENTERED WRONG CHOICE....");
 			printf("\nPRESS ANY KEY TO TRY AGAIN");

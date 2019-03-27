@@ -43,7 +43,7 @@ void delrecord()
 
                                 getch();
 
-                                return ;
+               
 
                             }
 
@@ -62,9 +62,9 @@ void delrecord()
 
                             printf("\n\tENTER THE DATE OF RECORD TO BE DELETED:[dd-mm-yyyy]:");
 
-                           scanf("%s",filename);
-			   sprintf(fname,"%s.txt",filename);
-	                   fp = fopen (fname,"wb") ;
+							scanf("%s",filename);
+							sprintf(fname,"%s.txt",filename);
+							fp = fopen (fname,"wb") ;
 
                             if ( fp == NULL )
 
@@ -84,6 +84,7 @@ void delrecord()
                             fclose(fp);
 
                             remove(fname);
+							
 
                             printf("\nDELETED SUCCESFULLY...");
 

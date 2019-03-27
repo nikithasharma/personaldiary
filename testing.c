@@ -10,11 +10,13 @@ int main()
 	int b;
 	int i;
 	printf("\n\t*************************************\n");
-	printf("\tHey....!!!!\nWelcome to personal diary management system!\n");
+	printf("\tWelcome to personal diary management system!\n");
 	printf("\n\t*************************************\n");
 	printf("Enter username:\n");
+	fflush(stdin);
 	scanf("%s",name);
 	printf("Enter password(8 characters):\n");
+	fflush(stdin);
 	scanf("%s",pass);
 	if (login(name,pass)==0)
 	{
@@ -33,15 +35,17 @@ char word[10]="password";
 	{
 		char pass[10];
 		printf("Enter old password:\n");
+		fflush(stdin);
 		scanf("%s",pass);
 		if(!strcmp(pass,word))
 		{
 			char newp[10];
 			printf("Enter new password:\n");
+			fflush(stdin);
 			scanf("%s",newp);
 			strncpy(word,newp,10);
-			printf("%s",word);
-			printf("Success");
+			printf("%s\n",word);
+			printf("Success\n");
 		}
 	}
     int login(char *name, char *pass)

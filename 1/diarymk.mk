@@ -1,5 +1,5 @@
-a:diary.o diary1.o addrec1.o view.o delete.o
-	gcc diary.o diary1.o addrec1.o view.o delete.o
+a:diary.o diary1.o addrec1.o view.o delete.o passowrd.o
+	gcc diary.o diary1.o addrec1.o view.o delete.o password.o
 diary.o:diary.c
 	gcc -c diary.c
 diary1.o:diary1.c
@@ -10,3 +10,5 @@ view.o:view.c
 	gcc -c view.c
 delete.o:delete.c
 	gcc -c delete.c
+password.o: password.c
+	gcc -c password.c
