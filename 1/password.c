@@ -24,12 +24,11 @@
 				word[i]=getch();
 				printf("*");   	
 			}
-			word[i]='\0';
 		}
 	}
     int login(char *name, char *pass)
     {
-     if(!strcmp(name,"nik") && !strcmp(pass,word))
+     if(!strcmp(name,"user") && !strcmp(pass,"password"))
      {
 		return 0;
      }
