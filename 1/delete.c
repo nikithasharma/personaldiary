@@ -15,12 +15,9 @@ void delrecord()
                 char filename[15],another = 'Y' ,time[10];;
 		char fname[60];
                 int choice,check;
+		printf("\t\t* WELCOME TO DELETE MENU*");
 
-                printf("\n\n\t\t*************************\n");
-
-                printf("\t\t* WELCOME TO DELETE MENU*");
-
-                printf("\n\t\t*************************\n\n");
+                
 		/*
                 check = password();
 
